@@ -1,0 +1,32 @@
+<?php
+
+return [
+	[
+		'name'          => 'redis server 1',
+		'host'          => '192.168.1.1',
+		'port'          => 6379,
+		'timeout'       => 2.5,
+		'retryInterval' => 100,
+		'auth'          => null,
+		'databaseMap'   => [
+			'0' => 'Sessions',
+			'1' => 'Sample Data',
+			// ...
+		],
+	],
+	/*
+	[
+		'name'          => 'Local redis server 2',
+		'host'          => '127.0.0.2',
+		'port'          => 6379,
+		'timeout'       => 2.5,
+		'retryInterval' => 100,
+		'auth'          => null,
+		'databaseMap'   => [
+			'0' => 'Sessions',
+			'1' => 'Sample Data',
+			// ...
+		],
+	],
+	*/
+];
